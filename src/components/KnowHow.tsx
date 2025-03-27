@@ -1,39 +1,38 @@
 
 import React from 'react';
-import { BookOpen, Code, LineChart, Users, Lightbulb, Cloud } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 type Skill = {
   title: string;
   description: string;
-  icon: React.ElementType;
+  imageSrc: string;
 };
 
 const skills: Skill[] = [
   {
     title: "Product Management Lifecycle",
-    description: "Guiding products from conception to launch by aligning business objectives with evolving user needs and market trends.",
-    icon: LineChart,
+    description: "Guiding products from conception to launch by aligning business objectives with user needs.",
+    imageSrc: "/lovable-uploads/d734f0ef-b64b-4330-a007-aacea2b1a570.png",
   },
   {
     title: "Design Thinking Processes",
-    description: "Creating intuitive experiences through empathy-driven methodologies that transform complex problems into elegant, user-centered solutions.",
-    icon: Lightbulb,
+    description: "Creating intuitive experiences through empathy-driven methodologies for elegant solutions.",
+    imageSrc: "/lovable-uploads/069a3fec-4f6e-439e-8e32-2fd2fe75c6f1.png",
   },
   {
     title: "Software Development Lifecycle",
-    description: "Building responsive applications with modern frameworks while ensuring code quality, performance optimization, and maintainable architecture.",
-    icon: Code,
+    description: "Building responsive applications with modern frameworks while ensuring code quality and performance.",
+    imageSrc: "/lovable-uploads/0048b927-dea0-45f5-85f8-a1dbc87fc995.png",
   },
   {
     title: "Cloud Systems Architecture",
-    description: "Designing scalable infrastructure leveraging cloud-native technologies to support analytics-driven product development and innovation.",
-    icon: Cloud,
+    description: "Designing scalable infrastructure leveraging cloud-native technologies for innovation.",
+    imageSrc: "/lovable-uploads/1cffaaa4-f96e-4ba6-a515-b15953b2bd91.png",
   },
   {
     title: "Change Leadership",
-    description: "Orchestrating cross-functional teams through transformation by fostering psychological safety, ownership, and purpose-driven collaboration.",
-    icon: Users,
+    description: "Orchestrating cross-functional teams through transformation by fostering safety and collaboration.",
+    imageSrc: "/lovable-uploads/bcee6879-838d-436d-ac94-a4ace9791bb8.png",
   }
 ];
 
@@ -51,34 +50,34 @@ const KnowHow: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skills.map((skill, index) => {
-            const Icon = skill.icon;
-            
-            return (
-              <div 
-                key={index}
-                className={cn(
-                  "glass-card rounded-xl p-6 flex flex-col items-center text-center",
-                  "animate-fade-in [animation-delay:var(--delay)]",
-                  "hover:border-primary/20 h-full"
-                )}
-                style={{ '--delay': `${index * 0.1}s` } as React.CSSProperties}
-              >
-                <div className="flex-shrink-0 h-14 w-14 rounded-lg flex items-center justify-center bg-primary/10 text-primary animate-float mb-4" style={{ animationDelay: `${index * 0.5}s` }}>
-                  <Icon className="h-7 w-7" />
-                </div>
-                
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">
-                    {skill.title}
-                  </h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">
-                    {skill.description}
-                  </p>
-                </div>
+          {skills.map((skill, index) => (
+            <div 
+              key={index}
+              className={cn(
+                "glass-card rounded-xl p-6 flex flex-col items-center text-center",
+                "animate-fade-in [animation-delay:var(--delay)]",
+                "hover:border-primary/20 h-full"
+              )}
+              style={{ '--delay': `${index * 0.1}s` } as React.CSSProperties}
+            >
+              <div className="flex-shrink-0 h-16 w-16 mb-4 animate-float" style={{ animationDelay: `${index * 0.5}s` }}>
+                <img 
+                  src={skill.imageSrc} 
+                  alt={skill.title} 
+                  className="w-full h-full object-contain" 
+                />
               </div>
-            );
-          })}
+              
+              <div>
+                <h3 className="text-lg font-semibold mb-3">
+                  {skill.title}
+                </h3>
+                <p className="text-sm text-foreground/70 leading-relaxed">
+                  {skill.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
