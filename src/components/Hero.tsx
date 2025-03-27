@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
         <div className="order-2 md:order-1 max-w-xl">
           <div className="text-reveal-container mb-3">
             <p className="text-sm md:text-base font-medium text-primary uppercase tracking-widest mb-3" ref={descriptionRef}>
-              Forward Momentum
+              Pawel Skorupinski
             </p>
           </div>
           
@@ -54,14 +54,14 @@ const Hero: React.FC = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6"
             ref={headingRef}
           >
-            Product Management & Engineering of What Moves Us Forward
+            Building Products That Move Us Forward
           </h1>
           
           <p 
             className="text-lg md:text-xl text-foreground/70 mb-8 leading-relaxed"
             ref={descriptionRef}
           >
-            Crafting digital experiences that blend innovation with human-centered design. I help organizations build products that create meaningful impact and drive sustainable growth.
+            I left traces managing and engineering products that allow for home-based brain stimulation, better management of vehicle fleets, or connecting climate tech enthusiasts with right job opportunities. I have a deep interest in the role of digital stacks and AI agents in shaping the future of healthcare and energy transition.
           </p>
           
           <div ref={buttonRef}>
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
               to="/contact" 
               className="btn-primary inline-flex items-center group"
             >
-              <span>Hit me up</span>
+              <span>Let's talk</span>
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 className="h-5 w-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" 
