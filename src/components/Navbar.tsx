@@ -83,48 +83,50 @@ const Navbar: React.FC = () => {
           Pawel Skorupinski
         </Link>
         
-        <nav className="hidden md:flex items-center space-x-8">
-          {navItems.map((item) => (
-            <div 
-              key={item.title}
-              ref={el => menuRefs.current[item.title] = el}
-              className="relative" 
-              onMouseEnter={() => item.submenu && setActiveMenu(item.title)}
-              onMouseLeave={() => item.submenu && setActiveMenu(null)}
-            >
-              <Link 
-                to={item.href}
-                className={cn(
-                  "menu-item text-foreground/80 hover:text-foreground transition-colors duration-200",
-                  activeMenu === item.title && "text-primary"
-                )}
+        <nav className="hidden md:flex items-center">
+          <div className="flex flex-row-reverse space-x-8 space-x-reverse">
+            {navItems.map((item) => (
+              <div 
+                key={item.title}
+                ref={el => menuRefs.current[item.title] = el}
+                className="relative" 
+                onMouseEnter={() => item.submenu && setActiveMenu(item.title)}
+                onMouseLeave={() => item.submenu && setActiveMenu(null)}
               >
-                <span className="flex items-center">
-                  {item.title}
-                  {item.submenu && <ChevronDown className="ml-1 h-4 w-4" />}
-                </span>
-              </Link>
-              
-              {item.submenu && (
-                <div 
+                <Link 
+                  to={item.href}
                   className={cn(
-                    "absolute top-full left-0 mt-1 p-2 min-w-[270px] glass-panel rounded-lg shadow-lg transition-all duration-200 ease-in-out-apple",
-                    activeMenu === item.title ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1 pointer-events-none"
+                    "menu-item text-foreground/80 hover:text-foreground transition-colors duration-200",
+                    activeMenu === item.title && "text-primary"
                   )}
                 >
-                  {item.submenu.map((subitem) => (
-                    <Link
-                      key={subitem.title}
-                      to={subitem.href}
-                      className="block px-4 py-2 text-sm rounded-md hover:bg-white/50 transition-colors duration-150"
-                    >
-                      {subitem.title}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
+                  <span className="flex items-center">
+                    {item.title}
+                    {item.submenu && <ChevronDown className="ml-1 h-4 w-4" />}
+                  </span>
+                </Link>
+                
+                {item.submenu && (
+                  <div 
+                    className={cn(
+                      "absolute top-full right-0 mt-1 p-2 min-w-[270px] glass-panel rounded-lg shadow-lg transition-all duration-200 ease-in-out-apple",
+                      activeMenu === item.title ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1 pointer-events-none"
+                    )}
+                  >
+                    {item.submenu.map((subitem) => (
+                      <Link
+                        key={subitem.title}
+                        to={subitem.href}
+                        className="block px-4 py-2 text-sm rounded-md hover:bg-white/50 transition-colors duration-150"
+                      >
+                        {subitem.title}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </nav>
         
         <button className="md:hidden text-foreground/90 hover:text-foreground transition-colors">
