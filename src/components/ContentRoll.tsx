@@ -14,28 +14,28 @@ type ContentItem = {
 
 const contentItems: ContentItem[] = [
   {
-    title: "Redesigning the User Experience for a Fintech Platform",
+    title: "Building a Household Helper AI Agent, pt. 1",
     description: "A case study on how we improved conversion rates by 37% through human-centered design and iterative testing.",
-    date: "October 2023",
+    date: "March 2025",
     category: "Case Study",
-    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=3940&ixlib=rb-4.0.3",
-    href: "/case-studies"
+    imageUrl: "https://1drv.ms/i/s!Am8JJcpLf8blgehtGujP_IXDyksaJA?embed=1&width=1536&height=1024",
+    href: "/case-studies/household-helper-ai-agent"
   },
   {
-    title: "The Future of Product Management in AI-driven Organizations",
+    title: "Insights from Mobile World Congress 2025",
     description: "Exploring how product managers can adapt their approach when working with artificial intelligence and machine learning technologies.",
-    date: "September 2023",
+    date: "March 2025",
     category: "Report",
     imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=3543&ixlib=rb-4.0.3",
-    href: "/reports"
+    href: "/reports/mwc-2025"
   },
   {
-    title: "Building Scalable Design Systems for Enterprise Products",
+    title: "Product Discovery Frameworks Map",
     description: "Learn how we created a design system that improved development velocity by 40% while maintaining brand consistency.",
-    date: "August 2023",
-    category: "Case Study",
+    date: "February 2025",
+    category: "Tools",
     imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=4076&ixlib=rb-4.0.3",
-    href: "/case-studies"
+    href: "/tools/product-discovery-tools-map"
   }
 ];
 
@@ -45,7 +45,7 @@ const ContentRoll: React.FC = () => {
       <div className="container mx-auto">
         <div className="mb-12 text-center md:text-left">
           <h2 className="section-heading">
-            Latest Content
+            Fresh Resources
           </h2>
           <p className="section-subheading mx-auto md:mx-0">
             Insights, case studies, and reports on product management, engineering, and design.
@@ -68,7 +68,7 @@ const ContentRoll: React.FC = () => {
                   alt={item.title} 
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 />
-                <div className="absolute top-4 left-4">
+                <div className="absolute top-4 right-4">
                   <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-background/80 backdrop-blur-sm">
                     {item.category}
                   </span>
@@ -98,16 +98,6 @@ const ContentRoll: React.FC = () => {
               </div>
             </article>
           ))}
-        </div>
-        
-        <div className="mt-12 text-center">
-          <a 
-            href="/all-content" 
-            className="inline-flex items-center text-foreground/80 hover:text-primary transition-colors duration-200 animated-underline group"
-          >
-            <span>View all content</span>
-            <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-          </a>
         </div>
       </div>
     </section>

@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
             <Link to="/" className="text-xl font-semibold tracking-tight mb-4 inline-block">
-              Forward Momentum
+              Pawel Skorupinski
             </Link>
             <p className="text-foreground/70 max-w-sm mb-6">
               Helping organizations build products that create meaningful impact and drive sustainable growth.
@@ -31,17 +31,17 @@ const Footer: React.FC = () => {
             <h3 className="font-medium mb-4">Navigation</h3>
             <ul className="space-y-2">
               <li><Link to="/" className="text-foreground/70 hover:text-primary transition-colors duration-200">Home</Link></li>
-              <li><Link to="/case-studies" className="text-foreground/70 hover:text-primary transition-colors duration-200">Case Studies</Link></li>
-              <li><Link to="/reports" className="text-foreground/70 hover:text-primary transition-colors duration-200">Reports</Link></li>
-              <li><Link to="/tools" className="text-foreground/70 hover:text-primary transition-colors duration-200">Tools</Link></li>
+              <li><Link to="/case-studies/household-helper-ai-agent" className="text-foreground/70 hover:text-primary transition-colors duration-200">Case Studies</Link></li>
+              <li><Link to="/reports/mwc-2025" className="text-foreground/70 hover:text-primary transition-colors duration-200">Reports</Link></li>
+              <li><Link to="/tools/product-discovery-tools-map" className="text-foreground/70 hover:text-primary transition-colors duration-200">Tools</Link></li>
               <li><Link to="/contact" className="text-foreground/70 hover:text-primary transition-colors duration-200">Contact</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-medium mb-4">Get in Touch</h3>
-            <a href="mailto:hello@forwardmomentum.com" className="text-foreground/70 hover:text-primary transition-colors duration-200 block mb-2">
-              hello@forwardmomentum.com
+            <a href="mailto:pawel@skorupinski.com" className="text-foreground/70 hover:text-primary transition-colors duration-200 block mb-2">
+              pawel@skorupinski.com
             </a>
             <a href="tel:+1234567890" className="text-foreground/70 hover:text-primary transition-colors duration-200 block mb-4">
               +1 (234) 567-890

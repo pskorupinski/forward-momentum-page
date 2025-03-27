@@ -13,18 +13,18 @@ type NavItem = {
 const navItems: NavItem[] = [
   {
     title: 'Case Studies',
-    href: '/case-studies',
-    submenu: [{ title: 'Featured Study', href: '/case-studies' }]
+    href: '/case-studies/household-helper-ai-agent',
+    submenu: [{ title: 'Household Helper AI Agent, pt. 1', href: '/case-studies/household-helper-ai-agent' }]
   },
   {
     title: 'Reports',
-    href: '/reports',
-    submenu: [{ title: 'Latest Report', href: '/reports' }]
+    href: '/reports/mwc-2025',
+    submenu: [{ title: 'Mobile World Congress 2025', href: '/reports/mwc-2025' }]
   },
   {
     title: 'Tools',
-    href: '/tools',
-    submenu: [{ title: 'Recommended Tools', href: '/tools' }]
+    href: '/tools/product-discovery-tools-map',
+    submenu: [{ title: 'Product Discovery Frameworks', href: '/tools/product-discovery-tools-map' }]
   },
   {
     title: 'Contact',
@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
           to="/" 
           className="text-xl md:text-2xl font-semibold tracking-tight"
         >
-          Forward Momentum
+          Pawel Skorupinski
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
               {item.submenu && (
                 <div 
                   className={cn(
-                    "absolute top-full left-0 mt-1 p-2 min-w-[180px] glass-panel rounded-lg shadow-lg transition-all duration-200 ease-in-out-apple",
+                    "absolute top-full left-0 mt-1 p-2 min-w-[270px] glass-panel rounded-lg shadow-lg transition-all duration-200 ease-in-out-apple",
                     activeMenu === item.title ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1 pointer-events-none"
                   )}
                 >

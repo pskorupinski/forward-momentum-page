@@ -94,9 +94,9 @@ const Hero: React.FC = () => {
           <div className="relative overflow-hidden rounded-2xl aspect-[4/3] shadow-2xl shadow-black/5">
             <div className="absolute inset-0 bg-gradient-to-br from-sky-50 to-indigo-100"></div>
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=3940&ixlib=rb-4.0.3" 
+              src="https://1drv.ms/i/s!Am8JJcpLf8blgehw_Yso1cOrI_zbRQ?embed=1" 
               alt="Professional working on forward-thinking solutions" 
-              className="absolute inset-0 w-full h-full object-cover opacity-90"
+              className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
           </div>
