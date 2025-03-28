@@ -12,27 +12,27 @@ const skills: Skill[] = [
   {
     title: "Product Management Lifecycle",
     description: "Guiding products from conception to launch by aligning business objectives with user needs.",
-    imageSrc: "/lovable-uploads/d734f0ef-b64b-4330-a007-aacea2b1a570.png",
+    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh1529cH9E8Hk87eg?embed=1&width=290&height=290",
   },
   {
     title: "Design Thinking Processes",
     description: "Creating intuitive experiences through empathy-driven methodologies for elegant solutions.",
-    imageSrc: "/lovable-uploads/069a3fec-4f6e-439e-8e32-2fd2fe75c6f1.png",
+    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh4PXSs0jkVxhsGag?embed=1&width=290&height=290",
   },
   {
     title: "Software Development Lifecycle",
     description: "Building responsive applications with modern frameworks while ensuring code quality and performance.",
-    imageSrc: "/lovable-uploads/0048b927-dea0-45f5-85f8-a1dbc87fc995.png",
+    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh5WZD4u52LN3PSTA?embed=1&width=291&height=290",
   },
   {
     title: "Cloud Systems Architecture",
     description: "Designing scalable infrastructure leveraging cloud-native technologies for innovation.",
-    imageSrc: "/lovable-uploads/1cffaaa4-f96e-4ba6-a515-b15953b2bd91.png",
+    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh60MrcLbod-wr03A?embed=1&width=289&height=290",
   },
   {
     title: "Change Leadership",
     description: "Orchestrating cross-functional teams through transformation by fostering safety and collaboration.",
-    imageSrc: "/lovable-uploads/bcee6879-838d-436d-ac94-a4ace9791bb8.png",
+    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh3kOa4uj2-Hwhn1Q?embed=1&width=290&height=290",
   }
 ];
 
