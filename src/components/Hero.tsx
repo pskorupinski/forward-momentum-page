@@ -54,14 +54,14 @@ const Hero: React.FC = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6"
             ref={headingRef}
           >
-            Building Products That Move Us Forward
+            Bridging Business Opportunities with Fit-For-Purpose Technology
           </h1>
           
           <p 
             className="text-lg md:text-xl text-foreground/70 mb-8 leading-relaxed"
             ref={descriptionRef}
           >
-            I left traces managing and engineering products that allow for home-based brain stimulation, better management of vehicle fleets, or connecting climate tech enthusiasts with right job opportunities. I have a deep interest in the role of digital stacks and AI agents in shaping the future of healthcare and energy transition.
+            Computer scientist who prioritizes impact. That led me to spend most of my 12-year career in health. Experience at leadership, engineering, and analyst positions shaped my holistic approach to challenges with technology products. Deeply interested in the role that digital stacks and AI agents play to unlock previously unthinkable solutions to businesses and society.
           </p>
           
           <div ref={buttonRef}>

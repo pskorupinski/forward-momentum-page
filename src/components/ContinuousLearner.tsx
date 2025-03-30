@@ -13,11 +13,11 @@ type Certification = {
 
 const certifications: Certification[] = [
   {
-    title: "Product Management Certification",
-    issuer: "Product School",
-    date: "2023",
-    description: "Advanced product strategy and roadmapping for technology products",
-    logoUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=3882&ixlib=rb-4.0.3",
+    title: "AI Agent Fundamentals",
+    issuer: "Hugging Face",
+    date: "2025",
+    description: "Theoretical foundations of agentic AI systems",
+    logoUrl: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
   },
   {
     title: "UX Design Professional Certificate",
@@ -84,7 +84,7 @@ const ContinuousLearner: React.FC = () => {
                 )}
                 style={{ '--delay': `${index * 0.15}s` } as React.CSSProperties}
               >
-                <div className="flex-shrink-0 h-14 w-14 rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 h-10 w-10 rounded-lg overflow-hidden">
                   {cert.logoUrl ? (
                     <img 
                       src={cert.logoUrl} 
@@ -101,11 +101,8 @@ const ContinuousLearner: React.FC = () => {
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <h3 className="font-semibold">
-                      {cert.title}
+                      {cert.title} ({cert.date})
                     </h3>
-                    <span className="text-xs text-muted-foreground">
-                      {cert.date}
-                    </span>
                   </div>
                   
                   <p className="text-sm font-medium text-primary mb-1">
