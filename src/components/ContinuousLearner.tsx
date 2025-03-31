@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { Award } from 'lucide-react';
@@ -10,6 +9,14 @@ type Certification = {
   description: string;
   logoUrl?: string;
   category: 'business' | 'technology';
+};
+
+type Hackathon = {
+  title: string;
+  organizer: string;
+  date: string;
+  description: string;
+  logoUrl?: string;
 };
 
 const certifications: Certification[] = [
@@ -63,6 +70,16 @@ const certifications: Certification[] = [
   }
 ];
 
+const hackathons: Hackathon[] = [
+  {
+    title: "Schneider Electric Hackathon",
+    organizer: "Schneider Electric",
+    date: "2025",
+    description: "Participated in developing innovative solutions for sustainable energy management and smart building technologies.",
+    logoUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
+  }
+];
+
 const ContinuousLearner: React.FC = () => {
   const businessCertifications = certifications.filter(cert => cert.category === 'business');
   const technologyCertifications = certifications.filter(cert => cert.category === 'technology');
@@ -102,6 +119,18 @@ const ContinuousLearner: React.FC = () => {
                 <CertificationCard 
                   key={`tech-${index}`}
                   certification={cert}
+                  index={index}
+                />
+              ))}
+            </div>
+            
+            {/* Hackathons subsection */}
+            <h3 className="text-2xl font-bold mb-6 mt-10 text-primary">Hackathons</h3>
+            <div className="space-y-6">
+              {hackathons.map((hackathon, index) => (
+                <HackathonCard 
+                  key={`hackathon-${index}`}
+                  hackathon={hackathon}
                   index={index}
                 />
               ))}
@@ -154,6 +183,53 @@ const CertificationCard: React.FC<CertificationCardProps> = ({ certification, in
         
         <p className="text-sm text-foreground/70">
           {certification.description}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+interface HackathonCardProps {
+  hackathon: Hackathon;
+  index: number;
+}
+
+const HackathonCard: React.FC<HackathonCardProps> = ({ hackathon, index }) => {
+  return (
+    <div 
+      className={cn(
+        "glass-card rounded-xl p-5 flex items-start gap-4",
+        "animate-fade-in-right [animation-delay:var(--delay)]"
+      )}
+      style={{ '--delay': `${index * 0.15}s` } as React.CSSProperties}
+    >
+      <div className="flex-shrink-0 h-10 w-10 rounded-lg overflow-hidden">
+        {hackathon.logoUrl ? (
+          <img 
+            src={hackathon.logoUrl} 
+            alt={hackathon.organizer} 
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center bg-primary/10 text-primary">
+            <Award className="h-6 w-6" />
+          </div>
+        )}
+      </div>
+      
+      <div>
+        <div className="flex items-center justify-between mb-1">
+          <h3 className="font-semibold">
+            {hackathon.title} ({hackathon.date})
+          </h3>
+        </div>
+        
+        <p className="text-sm font-medium text-primary mb-1">
+          {hackathon.organizer}
+        </p>
+        
+        <p className="text-sm text-foreground/70">
+          {hackathon.description}
         </p>
       </div>
     </div>
