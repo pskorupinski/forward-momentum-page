@@ -24,8 +24,8 @@ const certifications: Certification[] = [
     title: "Professional Scrum Product Owner II",
     issuer: "Scrum.org",
     date: "2025",
-    description: "Deepened my understanding of what is required to be an effective Product Owner who maximizes value using Scrum.",
-    logoUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
+    description: "Deepened my understanding of what is required to be an effective Product Owner maximizing value using Scrum.",
+    logoUrl: "https://1drv.ms/i/c/e5c67f4bca25096f/IQRvCSXKS3_GIIDlknMAAAAAAaYNgSJ6vPN-5g9PXN37GA8?width=256",
     category: 'business'
   },
   {
@@ -33,15 +33,15 @@ const certifications: Certification[] = [
     issuer: "Project Management Institute",
     date: "2023",
     description: "Helped me polish my knowledge of agile/hybrid project management concepts, tasks, and techniques.",
-    logoUrl: "https://images.unsplash.com/photo-1481887328591-3e277c85d1c2?auto=format&fit=crop&q=80&w=2060&ixlib=rb-4.0.3",
+    logoUrl: "https://1drv.ms/i/c/e5c67f4bca25096f/IQRvCSXKS3_GIIDlj3MAAAAAAUU7hL9mgd5GZMhHaoNBIuk?width=256",
     category: 'business'
   },
   {
-    title: "Human-Centered Systems Thinking: Design More Impactful Solutions in Complex Systems",
+    title: "Human-Centered Systems Thinking",
     issuer: "IDEO U",
     date: "2022",
     description: "Taught me to combine systems thinking tools with human-centered design to make sense of complex systems challenges.",
-    logoUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
+    logoUrl: "https://yt3.googleusercontent.com/ytc/AIdro_k5UfwuhwO-yFXQIfvQmHSoVWfsUrNHj8GLodN37RGx6VA=s900-c-k-c0x00ffffff-no-rj",
     category: 'business'
   },
   {
@@ -49,14 +49,14 @@ const certifications: Certification[] = [
     issuer: "Harvard Business School Online",
     date: "2020",
     description: "Gave me an insight into strategy and business positioning for growth through disruptive innovation.",
-    logoUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
+    logoUrl: "https://yt3.googleusercontent.com/QF-6eSYMhL6zGuAq1WsfGji8c-biBQUl8V2amXhDnlM7vvo1v6oQdIbsysPH2FnQKIYCnDKK=s900-c-k-c0x00ffffff-no-rj",
     category: 'business'
   },
   {
     title: "AI Agents Certification",
     issuer: "Hugging Face",
     date: "ongoing",
-    description: "Gave me theoretical and hands-on understanding of AI agents design, from concepts, through libraries, to use cases.",
+    description: "Gives me theoretical and hands-on understanding of AI agents design, from concepts, through libraries, to use cases.",
     logoUrl: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
     category: 'technology'
   },
@@ -65,7 +65,7 @@ const certifications: Certification[] = [
     issuer: "Amazon Web Services",
     date: "2024",
     description: "Helped me refresh knowledge of fundamentals of cloud computing leveraging AWS services and architecture.",
-    logoUrl: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
+    logoUrl: "https://1drv.ms/i/c/e5c67f4bca25096f/IQRvCSXKS3_GIIDlkHMAAAAAAR-QcgHUH7WQSLk8h-t6zhE?width=256",
     category: 'technology'
   }
 ];
@@ -75,8 +75,8 @@ const hackathons: Hackathon[] = [
     title: "Schneider Electric Hackathon",
     organizer: "Schneider Electric",
     date: "2025",
-    description: "Participated in developing innovative solutions for sustainable energy management and smart building technologies.",
-    logoUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
+    description: "Arrived at the top 10% of 200+ participants, showcasing hands-on skillsets in Python, SQL, and APIs for ERP modernization.",
+    logoUrl: "https://cdn.nuwe.io/Companies/Logos/schneider-electric-logo.jpg",
   }
 ];
 

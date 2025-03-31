@@ -12,14 +12,8 @@ type NavItem = {
 
 const navItems: NavItem[] = [
   {
-    title: 'Case Studies',
-    href: '/case-studies/household-helper-ai-agent',
-    submenu: [{ title: 'Household Helper AI Agent, pt. 1', href: '/case-studies/household-helper-ai-agent' }]
-  },
-  {
-    title: 'Reports',
-    href: '/reports/mwc-2025',
-    submenu: [{ title: 'Mobile World Congress 2025', href: '/reports/mwc-2025' }]
+    title: 'Contact',
+    href: '/contact'
   },
   {
     title: 'Tools',
@@ -27,8 +21,14 @@ const navItems: NavItem[] = [
     submenu: [{ title: 'Product Discovery Frameworks', href: '/tools/product-discovery-tools-map' }]
   },
   {
-    title: 'Contact',
-    href: '/contact'
+    title: 'Reports',
+    href: '/reports/mwc-2025',
+    submenu: [{ title: 'Mobile World Congress 2025', href: '/reports/mwc-2025' }]
+  },
+  {
+    title: 'Case Studies',
+    href: '/case-studies/household-helper-ai-agent',
+    submenu: [{ title: 'Household Helper AI Agent, pt. 1', href: '/case-studies/household-helper-ai-agent' }]
   }
 ];
 

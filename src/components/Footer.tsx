@@ -12,10 +12,10 @@ const Footer: React.FC = () => {
               Pawel Skorupinski
             </Link>
             <p className="text-foreground/70 max-w-sm mb-6">
-              Helping organizations build products that create meaningful impact and drive sustainable growth.
+              Turning Complexity into Opportunity.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-foreground/60 hover:text-primary transition-colors duration-200">
+              <a href="https://www.linkedin.com/in/skorupinski/" className="text-foreground/60 hover:text-primary transition-colors duration-200">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
               </a>
               <a href="#" className="text-foreground/60 hover:text-primary transition-colors duration-200">
@@ -43,8 +43,8 @@ const Footer: React.FC = () => {
             <a href="mailto:pawel@skorupinski.com" className="text-foreground/70 hover:text-primary transition-colors duration-200 block mb-2">
               pawel@skorupinski.com
             </a>
-            <a href="tel:+1234567890" className="text-foreground/70 hover:text-primary transition-colors duration-200 block mb-4">
-              +1 (234) 567-890
+            <a href="tel:+34655156711" className="text-foreground/70 hover:text-primary transition-colors duration-200 block mb-4">
+              +34 655 156 711
             </a>
             <Link to="/contact" className="text-primary font-medium inline-flex items-center group">
               <span>Contact Me</span>
@@ -57,10 +57,10 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="pt-6 border-t border-border/30 text-sm text-foreground/60 flex flex-col md:flex-row justify-between items-center">
-          <p>© {new Date().getFullYear()} Forward Momentum. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Pawel Skorupinski. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-primary transition-colors duration-200">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors duration-200">Terms of Service</a>
+            {/* <a href="#" className="hover:text-primary transition-colors duration-200">Privacy Policy</a>
+            <a href="#" className="hover:text-primary transition-colors duration-200">Terms of Service</a> */}
           </div>
         </div>
       </div>
