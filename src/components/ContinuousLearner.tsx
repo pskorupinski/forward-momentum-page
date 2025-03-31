@@ -14,51 +14,51 @@ type Certification = {
 
 const certifications: Certification[] = [
   {
-    title: "Agile Project Management",
-    issuer: "Scrum Alliance",
-    date: "2021",
-    description: "Leading agile teams and implementing scrum methodologies",
+    title: "Professional Scrum Product Owner II",
+    issuer: "Scrum.org",
+    date: "2025",
+    description: "Deepened my understanding of what is required to be an effective Product Owner who maximizes value using Scrum.",
     logoUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
     category: 'business'
   },
   {
-    title: "UX Design Professional Certificate",
-    issuer: "Google",
-    date: "2022",
-    description: "User research, wireframing, prototyping, and usability testing",
+    title: "Agile Hybrid Project Pro",
+    issuer: "Project Management Institute",
+    date: "2023",
+    description: "Helped me polish my knowledge of agile/hybrid project management concepts, tasks, and techniques.",
     logoUrl: "https://images.unsplash.com/photo-1481887328591-3e277c85d1c2?auto=format&fit=crop&q=80&w=2060&ixlib=rb-4.0.3",
     category: 'business'
   },
   {
-    title: "Digital Transformation Strategy",
-    issuer: "MIT Sloan",
-    date: "2023",
-    description: "Strategies for leading digital transformation initiatives across organizations",
+    title: "Human-Centered Systems Thinking: Design More Impactful Solutions in Complex Systems",
+    issuer: "IDEO U",
+    date: "2022",
+    description: "Taught me to combine systems thinking tools with human-centered design to make sense of complex systems challenges.",
     logoUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
     category: 'business'
   },
   {
-    title: "AI Agent Fundamentals",
+    title: "Certificate in Disruptive Strategy",
+    issuer: "Harvard Business School Online",
+    date: "2020",
+    description: "Gave me an insight into strategy and business positioning for growth through disruptive innovation.",
+    logoUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
+    category: 'business'
+  },
+  {
+    title: "AI Agents Certification",
     issuer: "Hugging Face",
-    date: "2025",
-    description: "Theoretical foundations of agentic AI systems",
+    date: "ongoing",
+    description: "Gave me theoretical and hands-on understanding of AI agents design, from concepts, through libraries, to use cases.",
     logoUrl: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
     category: 'technology'
   },
   {
-    title: "Advanced React & Redux",
-    issuer: "Frontend Masters",
-    date: "2022",
-    description: "Building scalable applications with React, Redux, and TypeScript",
+    title: "AWS Certified Cloud Practitioner",
+    issuer: "Amazon Web Services",
+    date: "2024",
+    description: "Helped me refresh knowledge of fundamentals of cloud computing leveraging AWS services and architecture.",
     logoUrl: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
-    category: 'technology'
-  },
-  {
-    title: "Cloud Architecture",
-    issuer: "AWS",
-    date: "2023",
-    description: "Designing and implementing scalable cloud infrastructure solutions",
-    logoUrl: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
     category: 'technology'
   }
 ];

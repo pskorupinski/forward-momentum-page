@@ -11,28 +11,33 @@ type Skill = {
 const skills: Skill[] = [
   {
     title: "Product Management Lifecycle",
-    description: "Guiding products from conception to launch by aligning business objectives with user needs.",
-    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh1529cH9E8Hk87eg?embed=1&width=290&height=290",
+    description: "Well-versed in pragmatic approaches for discovery, requirements, roadmapping, and performance monitoring, always focused on customer needs and strategic alignment.",
+    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh1529cH9E8Hk87eg?embed=1&width=256",
   },
   {
-    title: "Design Thinking Processes",
-    description: "Creating intuitive experiences through empathy-driven methodologies for elegant solutions.",
-    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh4PXSs0jkVxhsGag?embed=1&width=290&height=290",
+    title: "Data Analytics",
+    description: "Diligent critical thinker proficient in leveraging Excel, SQL, Python, PowerPI or Google Analytics to drive insight on customer, operations and business performance.",
+    imageSrc: "https://1drv.ms/i/c/e5c67f4bca25096f/IQTDcVKrMI-bTJDVZzlevN2qAeCzCVwcpnYQzuBf5C33-o0?width=256",
   },
   {
-    title: "Software Development Lifecycle",
-    description: "Building responsive applications with modern frameworks while ensuring code quality and performance.",
-    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh5WZD4u52LN3PSTA?embed=1&width=291&height=290",
+    title: "Agile Project Management",
+    description: "Excellent facilitator, experienced in leveraging SAFe, Scrum, and Kanban to deliver complex projects fostering accountability, transparency and stakeholder engagement.",
+    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh5WZD4u52LN3PSTA?embed=1&width=256",
   },
   {
     title: "Cloud Systems Architecture",
-    description: "Designing scalable infrastructure leveraging cloud-native technologies for innovation.",
-    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh60MrcLbod-wr03A?embed=1&width=289&height=290",
+    description: "Experienced designing scalable and resilient production systems with AWS and Azure, leveraging PaaS offerings for data transfer, storage, and compute.",
+    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh60MrcLbod-wr03A?embed=1&width=256",
+  },
+  {
+    title: "Design Thinking Processes",
+    description: "Know-how in UX toolkits help me align teams around the essence of complex problems with empathy and champion hypothesis-driven approaches for effective learning.",
+    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh4PXSs0jkVxhsGag?embed=1&width=256",
   },
   {
     title: "Change Leadership",
-    description: "Orchestrating cross-functional teams through transformation by fostering safety and collaboration.",
-    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh3kOa4uj2-Hwhn1Q?embed=1&width=290&height=290",
+    description: "Ready to bring teams through strategic transformations, valuing insight from diverse stakeholders, clearly communicating aligned vision, and pioneering new approaches.",
+    imageSrc: "https://1drv.ms/i/s!Am8JJcpLf8blgeh3kOa4uj2-Hwhn1Q?embed=1&width=256",
   }
 ];
 
