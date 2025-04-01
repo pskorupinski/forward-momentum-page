@@ -1,9 +1,40 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const CaseStudies: React.FC = () => {
+  const [openImage, setOpenImage] = useState<string | null>(null);
+
+  const subsections = [
+    {
+      title: "Problem Space Exploration",
+      content: "We conducted extensive research to map out the challenges faced by busy professionals in managing their homes. This involved interviews with 50+ households, analyzing pain points, and identifying opportunities for automation and assistance.",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      description: "Person using MacBook Pro, analyzing home management data"
+    },
+    {
+      title: "Problem-Solution Fit Exploration",
+      content: "Through iterative prototyping and testing, we identified which home management challenges could be effectively addressed through AI assistance. We prioritized solutions based on user impact and technical feasibility.",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+      description: "Woman reviewing household management solutions on laptop computer"
+    },
+    {
+      title: "Narrowed-Down Challenge",
+      content: "We focused on three key areas: task scheduling automation, predictive maintenance for home systems, and contextual assistance for routine activities. These represented the highest value opportunities for our target users.",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      description: "Circuit board representing the AI system architecture"
+    },
+    {
+      title: "Design Analysis",
+      content: "The interface was designed to balance simplicity with power, allowing users to interact naturally while providing deep capabilities when needed. We emphasized natural language interaction with visual reinforcement for key functions.",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      description: "Interface development for the household helper application"
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -17,11 +48,15 @@ const CaseStudies: React.FC = () => {
           <div className="glass-card p-8 rounded-xl mb-12 animate-fade-in">
             <div className="flex flex-col gap-8">
               <div className="rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=3940&ixlib=rb-4.0.3" 
-                  alt="AI Home Assistant Interface" 
-                  className="w-full object-cover"
-                />
+                <AspectRatio ratio={16/9} className="w-full">
+                  <iframe 
+                    src="https://www.youtube.com/embed/ipx2xbR7UrA" 
+                    title="Household Helper AI Agent Demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen
+                    className="w-full h-full"
+                  ></iframe>
+                </AspectRatio>
               </div>
               
               <div className="grid md:grid-cols-3 gap-8">
@@ -33,28 +68,70 @@ const CaseStudies: React.FC = () => {
                     a seamless experience for managing household tasks, schedules, and maintenance.
                   </p>
                   
-                  <h3 className="text-xl font-semibold mt-8 mb-3">The Challenge</h3>
-                  <p className="text-foreground/70 mb-6">
-                    Modern households face increasing complexity in managing daily operations, from coordinating schedules 
-                    to maintaining appliances and systems. Most existing solutions address only specific aspects of home 
-                    management, leaving users to cobble together multiple apps and services.
-                  </p>
+                  {subsections.map((section, index) => (
+                    <div key={index} className="mb-10">
+                      <h3 className="text-xl font-semibold mt-8 mb-3">{section.title}</h3>
+                      <p className="text-foreground/70 mb-4">{section.content}</p>
+                      <div className="relative overflow-hidden rounded-lg cursor-pointer group" onClick={() => setOpenImage(section.image)}>
+                        <img 
+                          src={section.image} 
+                          alt={section.title} 
+                          className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                          <span className="text-white font-medium">Click to expand</span>
+                        </div>
+                      </div>
+                      <p className="text-sm text-foreground/60 mt-2 italic">{section.description}</p>
+                    </div>
+                  ))}
                   
-                  <h3 className="text-xl font-semibold mt-8 mb-3">The Approach</h3>
+                  <h3 className="text-xl font-semibold mt-8 mb-3">The Results</h3>
                   <p className="text-foreground/70 mb-6">
-                    We started with extensive user research to understand the pain points in home management. This led 
-                    to the development of a unified AI system that could understand context, learn user preferences, 
-                    and proactively suggest optimizations for household operations.
+                    The Household Helper AI Agent has demonstrated remarkable success in reducing the cognitive load 
+                    of home management. Users report significant reductions in forgotten tasks, missed maintenance, 
+                    and scheduling conflicts. The system's ability to learn from user behavior has been particularly 
+                    valuable, with personalization increasing substantially after just 4 weeks of use.
                   </p>
+                  <div className="relative overflow-hidden rounded-lg cursor-pointer group mb-4" onClick={() => setOpenImage("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b")}>
+                    <img 
+                      src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+                      alt="The Results" 
+                      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <span className="text-white font-medium">Click to expand</span>
+                    </div>
+                  </div>
+                  <p className="text-sm text-foreground/60 mt-2 mb-8 italic">Analytics dashboard showing user engagement and task completion rates</p>
                   
-                  <h3 className="text-xl font-semibold mt-8 mb-3">Key Features Developed</h3>
-                  <ul className="list-disc pl-6 text-foreground/70 mb-6 space-y-2">
-                    <li>Natural language interface for task management</li>
-                    <li>Predictive maintenance alerts for home systems</li>
-                    <li>Intelligent scheduling with conflict resolution</li>
-                    <li>Integration with major smart home ecosystems</li>
-                    <li>Personalized learning algorithms that adapt to household patterns</li>
+                  <h3 className="text-xl font-semibold mt-8 mb-3">Lessons Learned</h3>
+                  <p className="text-foreground/70 mb-6">
+                    Building this product revealed important insights about AI assistants in the home environment:
+                  </p>
+                  <ul className="list-disc pl-6 text-foreground/70 mb-8 space-y-2">
+                    <li>Privacy concerns must be addressed from the outset with transparent data policies</li>
+                    <li>Contextual understanding is more valuable than feature quantity</li>
+                    <li>Integration capabilities significantly impact adoption rates</li>
+                    <li>Error handling must be exceptionally user-friendly in home settings</li>
                   </ul>
+                  <div className="relative overflow-hidden rounded-lg cursor-pointer group mb-4" onClick={() => setOpenImage("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80")}>
+                    <img 
+                      src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80" 
+                      alt="Lessons Learned" 
+                      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <span className="text-white font-medium">Click to expand</span>
+                    </div>
+                  </div>
+                  <p className="text-sm text-foreground/60 mt-2 mb-8 italic">Team retrospective session evaluating user feedback</p>
+                  
+                  <div className="flex justify-center mt-8">
+                    <a href="/contact" className="btn-primary inline-block">
+                      Interested in similar solutions? Get in touch
+                    </a>
+                  </div>
                 </div>
                 
                 <div>
@@ -99,38 +176,21 @@ const CaseStudies: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
-              <div>
-                <h3 className="text-xl font-semibold mt-6 mb-3">The Results</h3>
-                <p className="text-foreground/70 mb-6">
-                  The Household Helper AI Agent has demonstrated remarkable success in reducing the cognitive load 
-                  of home management. Users report significant reductions in forgotten tasks, missed maintenance, 
-                  and scheduling conflicts. The system's ability to learn from user behavior has been particularly 
-                  valuable, with personalization increasing substantially after just 4 weeks of use.
-                </p>
-                
-                <h3 className="text-xl font-semibold mt-8 mb-3">Lessons Learned</h3>
-                <p className="text-foreground/70 mb-6">
-                  Building this product revealed important insights about AI assistants in the home environment:
-                </p>
-                <ul className="list-disc pl-6 text-foreground/70 mb-8 space-y-2">
-                  <li>Privacy concerns must be addressed from the outset with transparent data policies</li>
-                  <li>Contextual understanding is more valuable than feature quantity</li>
-                  <li>Integration capabilities significantly impact adoption rates</li>
-                  <li>Error handling must be exceptionally user-friendly in home settings</li>
-                </ul>
-                
-                <div className="flex justify-center mt-8">
-                  <a href="/contact" className="btn-primary inline-block">
-                    Interested in similar solutions? Get in touch
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </main>
       <Footer />
+      
+      <Dialog open={!!openImage} onOpenChange={() => setOpenImage(null)}>
+        <DialogContent className="sm:max-w-4xl p-0 overflow-hidden">
+          <img 
+            src={openImage || ''} 
+            alt="Expanded view" 
+            className="w-full h-auto"
+          />
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
