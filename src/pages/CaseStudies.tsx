@@ -18,20 +18,26 @@ const CaseStudies: React.FC = () => {
     {
       title: "",
       content: "We conducted extensive research to map out the challenges faced by busy professionals in managing their homes. This involved interviews with 50+ households, analyzing pain points, and identifying opportunities for automation and assistance.",
-      image: "https://1drv.ms/i/c/e5c67f4bca25096f/IQQ5jX6plFauT4N_uEViYaqyAbx-PyQRdVKCvM8YbV1xWRk?width=1024",
-      description: "Current-State Journey Map of Laundry Management"
+      image: "https://1drv.ms/i/c/e5c67f4bca25096f/IQS_YnMR1dc7Rb39h8BiYPBQAZdFW2q9i3VfMG08D9Yn0Vw?width=1024",
+      description: "Hypothetical Customer Profile (click to see full)"
     },
     {
-      title: "Problem-Solution Fit Exploration",
+      title: "Solution Design Ideation",
       content: "Through iterative prototyping and testing, we identified which home management challenges could be effectively addressed through AI assistance. We prioritized solutions based on user impact and technical feasibility.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-      description: "Woman reviewing household management solutions on laptop computer"
+      image: "https://1drv.ms/i/c/e5c67f4bca25096f/IQTCV0E9fD4QRZMWvPWJTkM_AcysQzDYmK_TKGItPAYlHbo?width=1024",
+      description: "Current-State + Ideated Future-State Journey Map of Laundry Management (click to see full)"
     },
     {
-      title: "Narrowed-Down Challenge",
+      title: "",
+      content: "Through iterative prototyping and testing, we identified which home management challenges could be effectively addressed through AI assistance. We prioritized solutions based on user impact and technical feasibility.",
+      image: "https://1drv.ms/i/c/e5c67f4bca25096f/IQS7OZr_rbf-Qojq-KYJAvsRAdj6muuO7uMbzvNSa2vI4Lg?width=1024",
+      description: "Hypothetical Customer Profile + Ideated Value Map (click to see full)"
+    },
+    {
+      title: "Narrowed-Down Challenge: How-Might-We...",
       content: "We focused on three key areas: task scheduling automation, predictive maintenance for home systems, and contextual assistance for routine activities. These represented the highest value opportunities for our target users.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-      description: "Circuit board representing the AI system architecture"
+      image: "https://1drv.ms/i/c/e5c67f4bca25096f/IQQ48MHmpBpXS6MfdGVfWnpUAZ3SZj7C9_aJjn--p6w6-0A?width=1024",
+      description: "Part of the Value Map I Chose to Focus On (click to see full)"
     },
     {
       title: "Design Analysis",
