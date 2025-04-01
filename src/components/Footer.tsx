@@ -9,8 +9,13 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
-            <Link to="/" className="text-xl font-semibold tracking-tight mb-4 inline-block">
-              Pawel Skorupinski
+            <Link to="/" className="flex items-center mb-4">
+              <img 
+                src="/pawel-profile.png" 
+                alt="Pawel Skorupinski" 
+                className="h-10 w-10 rounded-full object-cover mr-3"
+              />
+              <span className="text-xl font-semibold tracking-tight">Pawel Skorupinski</span>
             </Link>
             <p className="text-foreground/70 max-w-sm mb-6">
               Turning Complexity into Opportunity.

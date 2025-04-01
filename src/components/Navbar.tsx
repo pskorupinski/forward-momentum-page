@@ -78,9 +78,14 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link 
           to="/" 
-          className="text-xl md:text-2xl font-semibold tracking-tight"
+          className="flex items-center"
         >
-          Pawel Skorupinski
+          <img 
+            src="/pawel-profile.png" 
+            alt="Pawel Skorupinski" 
+            className="h-10 w-10 rounded-full object-cover mr-3"
+          />
+          <span className="text-xl md:text-2xl font-semibold tracking-tight">Pawel Skorupinski</span>
         </Link>
         
         <nav className="hidden md:flex items-center">
