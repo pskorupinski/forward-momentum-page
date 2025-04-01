@@ -10,10 +10,16 @@ const CaseStudies: React.FC = () => {
 
   const subsections = [
     {
-      title: "Problem Space Exploration",
+      title: "The Challenge",
       content: "We conducted extensive research to map out the challenges faced by busy professionals in managing their homes. This involved interviews with 50+ households, analyzing pain points, and identifying opportunities for automation and assistance.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      description: "Person using MacBook Pro, analyzing home management data"
+      image: "https://1drv.ms/i/c/e5c67f4bca25096f/IQQ5jX6plFauT4N_uEViYaqyAbx-PyQRdVKCvM8YbV1xWRk?width=1024",
+      description: "Current-State Journey Map of Laundry Management"
+    },
+    {
+      title: "",
+      content: "We conducted extensive research to map out the challenges faced by busy professionals in managing their homes. This involved interviews with 50+ households, analyzing pain points, and identifying opportunities for automation and assistance.",
+      image: "https://1drv.ms/i/c/e5c67f4bca25096f/IQQ5jX6plFauT4N_uEViYaqyAbx-PyQRdVKCvM8YbV1xWRk?width=1024",
+      description: "Current-State Journey Map of Laundry Management"
     },
     {
       title: "Problem-Solution Fit Exploration",
@@ -40,9 +46,9 @@ const CaseStudies: React.FC = () => {
       <Navbar />
       <main className="flex-grow pt-28 pb-20">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-8">Household Helper AI Agent</h1>
+          <h1 className="text-4xl font-bold mb-8">Household Helper AI Agent, pt. 1</h1>
           <p className="text-xl text-foreground/70 mb-12 max-w-3xl">
-            A case study on building an assistive AI agent that helps manage home tasks for busy professionals.
+            Diving into the problem space of household management inconveniences to explore agentic AI use cases, interaction design, and development tech stack.
           </p>
           
           <div className="glass-card p-8 rounded-xl mb-12 animate-fade-in">

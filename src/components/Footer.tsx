@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center mb-4">
               <img 
-                src="/pawel-profile.png" 
+                src="https://1drv.ms/i/c/e5c67f4bca25096f/IQRuCaZGMZsnTIouaf5dpvesARhkXXIkry3D9i6xHseOJ4o?width=256" 
                 alt="Pawel Skorupinski" 
                 className="h-10 w-10 rounded-full object-cover mr-3"
               />
