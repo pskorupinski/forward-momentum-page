@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center mb-4">
               <img 
-                src="https://1drv.ms/i/c/e5c67f4bca25096f/IQRuCaZGMZsnTIouaf5dpvesARhkXXIkry3D9i6xHseOJ4o?width=256" 
+                src="/pawel-skorupinski.png" 
                 alt="Pawel Skorupinski" 
                 className="h-10 w-10 rounded-full object-cover mr-3"
               />
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
             <h3 className="font-medium mb-4">Navigation</h3>
             <ul className="space-y-2">
               <li><Link to="/" className="text-foreground/70 hover:text-primary transition-colors duration-200">Home</Link></li>
-              <li><Link to="/case-studies/household-helper-ai-agent" className="text-foreground/70 hover:text-primary transition-colors duration-200">Case Studies</Link></li>
+              <li><Link to="/case-studies" className="text-foreground/70 hover:text-primary transition-colors duration-200">Case Studies</Link></li>
               <li><Link to="/reports/mwc-2025" className="text-foreground/70 hover:text-primary transition-colors duration-200">Reports</Link></li>
               <li><Link to="/tools/product-discovery-tools-map" className="text-foreground/70 hover:text-primary transition-colors duration-200">Tools</Link></li>
               <li><Link to="/contact" className="text-foreground/70 hover:text-primary transition-colors duration-200">Contact</Link></li>

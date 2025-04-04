@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
 
@@ -19,7 +20,7 @@ const contentItems: ContentItem[] = [
     date: "March 2025",
     category: "Case Study",
     imageUrl: "https://1drv.ms/i/s!Am8JJcpLf8blgehtGujP_IXDyksaJA?embed=1&width=1536&height=1024",
-    href: "/case-studies/household-helper-ai-agent"
+    href: "/case-studies"
   },
   {
     title: "Insights from Mobile World Congress 2025",

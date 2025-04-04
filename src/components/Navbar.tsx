@@ -27,8 +27,14 @@ const navItems: NavItem[] = [
   },
   {
     title: 'Case Studies',
-    href: '/case-studies/household-helper-ai-agent',
-    submenu: [{ title: 'Household Helper AI Agent, pt. 1', href: '/case-studies/household-helper-ai-agent' }]
+    href: '/case-studies',
+    submenu: [
+      { title: 'Household Helper AI Agent, pt. 1', href: '/case-studies/household-helper-ai-agent' },
+      { title: 'Strategic Business Analysis', href: '/case-studies/strategic-business-analysis' },
+      { title: 'Engineering Production Systems I', href: '/case-studies/engineering-production-systems-1' },
+      { title: 'Engineering Production Systems II', href: '/case-studies/engineering-production-systems-2' },
+      { title: 'Healthcare Patient Experience', href: '/case-studies/new-product-prototype' }
+    ]
   }
 ];
 
@@ -81,7 +87,7 @@ const Navbar: React.FC = () => {
           className="flex items-center"
         >
           <img 
-            src="https://1drv.ms/i/c/e5c67f4bca25096f/IQRuCaZGMZsnTIouaf5dpvesARhkXXIkry3D9i6xHseOJ4o?width=256" 
+            src="/pawel-skorupinski.png" 
             alt="Pawel Skorupinski" 
             className="h-10 w-10 rounded-full object-cover mr-3"
           />
