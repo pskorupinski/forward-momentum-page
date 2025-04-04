@@ -10,6 +10,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 const Reports: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [viewportHeight, setViewportHeight] = useState(0);
+  const [containerSize, setContainerSize] = useState(0);
   const isMobile = useIsMobile();
 
   useEffect(() => {
@@ -18,8 +19,15 @@ const Reports: React.FC = () => {
       const navbarHeight = 80; // Approximate navbar height
       const paddingTop = 100; // Account for the pt-28 (7rem = 112px) minus some space
       const bottomPadding = 40; // Some padding at the bottom
+      const titleAndControlsHeight = 140; // Height for title, page number, and navigation buttons
+      
+      // Available height for the entire component
       const availableHeight = window.innerHeight - navbarHeight - paddingTop - bottomPadding;
       setViewportHeight(availableHeight);
+      
+      // Calculate the size for a square container that fits within the available height
+      const maxSquareSize = Math.min(availableHeight - titleAndControlsHeight, window.innerWidth * 0.8);
+      setContainerSize(maxSquareSize);
     };
 
     calculateHeight();
@@ -48,7 +56,10 @@ const Reports: React.FC = () => {
           
           <div className="mb-8">
             <div className="bg-white rounded-lg shadow-md p-4 mb-6"
-                 style={{ maxHeight: viewportHeight ? `${viewportHeight}px` : 'auto', overflow: 'hidden' }}>
+                 style={{ 
+                   maxHeight: viewportHeight ? `${viewportHeight}px` : 'auto', 
+                   overflow: 'hidden'
+                 }}>
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-xl font-medium">MWC 2025 Report</h2>
                 <div className="flex items-center gap-2">
@@ -56,10 +67,11 @@ const Reports: React.FC = () => {
                 </div>
               </div>
               
-              <div className="relative bg-gray-50 rounded-md mb-4 overflow-hidden" 
+              <div className="mx-auto rounded-md mb-4 overflow-hidden bg-gray-50"
                    style={{ 
-                     height: viewportHeight ? `${viewportHeight - 120}px` : '400px',
-                     maxHeight: isMobile ? '50vh' : `${viewportHeight - 120}px`
+                     width: isMobile ? '100%' : `${containerSize}px`, 
+                     height: isMobile ? 'auto' : `${containerSize}px`,
+                     maxWidth: '100%'
                    }}>
                 <AspectRatio ratio={isMobile ? 3/4 : 1/1} className="h-full">
                   <iframe 
