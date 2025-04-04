@@ -1,13 +1,32 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Button } from '@/components/ui/button';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const Reports: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [viewportHeight, setViewportHeight] = useState(0);
+  const isMobile = useIsMobile();
+
+  useEffect(() => {
+    // Calculate viewport height minus navbar and some padding
+    const calculateHeight = () => {
+      const navbarHeight = 80; // Approximate navbar height
+      const paddingTop = 100; // Account for the pt-28 (7rem = 112px) minus some space
+      const bottomPadding = 40; // Some padding at the bottom
+      const availableHeight = window.innerHeight - navbarHeight - paddingTop - bottomPadding;
+      setViewportHeight(availableHeight);
+    };
+
+    calculateHeight();
+    window.addEventListener('resize', calculateHeight);
+    
+    return () => window.removeEventListener('resize', calculateHeight);
+  }, []);
 
   const nextPage = () => {
     setCurrentPage(prev => prev + 1);
@@ -28,7 +47,8 @@ const Reports: React.FC = () => {
           </p>
           
           <div className="mb-8">
-            <div className="bg-white rounded-lg shadow-md p-4 mb-6">
+            <div className="bg-white rounded-lg shadow-md p-4 mb-6"
+                 style={{ maxHeight: viewportHeight ? `${viewportHeight}px` : 'auto', overflow: 'hidden' }}>
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-xl font-medium">MWC 2025 Report</h2>
                 <div className="flex items-center gap-2">
@@ -36,8 +56,12 @@ const Reports: React.FC = () => {
                 </div>
               </div>
               
-              <div className="relative bg-gray-50 rounded-md mb-4 overflow-hidden">
-                <AspectRatio ratio={1/1} className="w-full">
+              <div className="relative bg-gray-50 rounded-md mb-4 overflow-hidden" 
+                   style={{ 
+                     height: viewportHeight ? `${viewportHeight - 120}px` : '400px',
+                     maxHeight: isMobile ? '50vh' : `${viewportHeight - 120}px`
+                   }}>
+                <AspectRatio ratio={isMobile ? 3/4 : 1/1} className="h-full">
                   <iframe 
                     src={`https://1drv.ms/b/c/e5c67f4bca25096f/IQQcQsnwXTqhSI_jByioNGDvASkkzSHmORbgJHaSB1cYhH4?embed=true#page=${currentPage}`}
                     width="100%" 
@@ -155,4 +179,3 @@ const Reports: React.FC = () => {
 };
 
 export default Reports;
-
