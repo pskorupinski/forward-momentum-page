@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
           className="flex items-center"
         >
           <img 
-            src="/pawel-skorupinski.png" 
+            src="https://1drv.ms/i/c/e5c67f4bca25096f/IQRuCaZGMZsnTIouaf5dpvesARhkXXIkry3D9i6xHseOJ4o?width=256" 
             alt="Pawel Skorupinski" 
             className="h-10 w-10 rounded-full object-cover mr-3"
           />
