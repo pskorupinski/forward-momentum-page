@@ -23,10 +23,10 @@ const caseStudiesData: CategorySection[] = [
     title: "Strategic Business Analysis",
     items: [
       {
-        title: "Case Study 2",
-        description: "An in-depth analysis of strategic business operations and optimization techniques.",
-        imageUrl: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80",
-        href: "/case-studies/strategic-business-analysis"
+        title: "Streamlining Product Portfolio",
+        description: "How we unlocked business strategy by reducing product portfolio efforts with maintained $2M/Y revenues.",
+        imageUrl: "https://1drv.ms/i/c/e5c67f4bca25096f/IQR5DAkDiZkmRo3J7rIpkzTSAdviz-LcerwZu2tSHGOBuaU?width=1024",
+        href: "/case-studies/streamlining-product-portfolio"
       }
     ]
   },
@@ -34,32 +34,38 @@ const caseStudiesData: CategorySection[] = [
     title: "Engineering Production System Capabilities",
     items: [
       {
-        title: "Case Study 3",
-        description: "How we improved production systems through innovative engineering approaches.",
-        imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80",
-        href: "/case-studies/engineering-production-systems-1"
+        title: "Re-Designing Large Cloud Service Specs",
+        description: "How we got the cloud service design ready for new business use cases for 1M+ connected devices in 2 months.",
+        imageUrl: "https://1drv.ms/i/c/e5c67f4bca25096f/IQQmFu9PJLJuRY6N9SsSzoQUAaXJwLbNRPVXj_UGXC10XSA?width=1024",
+        href: "/case-studies/re-designing-large-cloud-service-specs"
       },
       {
-        title: "Case Study 4",
-        description: "Scaling production capabilities through advanced engineering methods.",
-        imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80",
+        title: "Shaping Global Release to 1K+ Customers",
+        description: "How we boosted adoption and success rate of the the critical quality release.",
+        imageUrl: "https://1drv.ms/i/c/e5c67f4bca25096f/IQSPekS7XDNgQoMMcU-MiI3yAdQP1ds1vmOTLtp1hMFGqMQ?width=1024",
         href: "/case-studies/engineering-production-systems-2"
-      }
+      },
+      // {
+      //   title: "Case Study 5",
+      //   description: "Innovative product prototype that redefined user experiences in healthcare.",
+      //   imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80",
+      //   href: "/case-studies/new-product-prototype"
+      // }
     ]
   },
   {
     title: "New Product Prototypes",
     items: [
+      // {
+      //   title: "Case Study 6",
+      //   description: "Innovative product prototype that redefined user experiences in healthcare.",
+      //   imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80",
+      //   href: "/case-studies/new-product-prototype"
+      // },
       {
-        title: "Case Study 5",
-        description: "Innovative product prototype that redefined user experiences in healthcare.",
-        imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80",
-        href: "/case-studies/new-product-prototype"
-      },
-      {
-        title: "Household Helper AI Agent, pt. 1",
+        title: "Building Household Helper AI Agent, pt. 1",
         description: "Diving into the problem space of household management inconveniences to explore agentic AI use cases.",
-        imageUrl: "https://1drv.ms/i/c/e5c67f4bca25096f/IQS_YnMR1dc7Rb39h8BiYPBQAZdFW2q9i3VfMG08D9Yn0Vw?width=1024",
+        imageUrl: "https://1drv.ms/i/s!Am8JJcpLf8blgehtGujP_IXDyksaJA?embed=1&width=1536&height=1024",
         href: "/case-studies/household-helper-ai-agent"
       }
     ]

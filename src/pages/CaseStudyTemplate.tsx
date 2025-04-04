@@ -20,6 +20,12 @@ type CaseStudyTemplateProps = {
     impact: string;
     adoption: string;
   };
+  subsections: {
+    title: string;
+    content: string[];
+    image: string;
+    description: string;
+  }[];
 };
 
 const CaseStudyTemplate: React.FC<CaseStudyTemplateProps> = ({
@@ -27,52 +33,14 @@ const CaseStudyTemplate: React.FC<CaseStudyTemplateProps> = ({
   subtitle,
   heroImage,
   projectStats,
-  outcomes
+  outcomes,
+  subsections
 }) => {
   const [openImage, setOpenImage] = useState<string | null>(null);
   
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const subsections = [
-    {
-      title: "Problem Space Exploration",
-      content: "We conducted extensive research to map out the challenges faced by our target audience, involving interviews, competitive analysis, and market research to identify key pain points and opportunities.",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80",
-      description: "Analysis of current market landscape and user pain points"
-    },
-    {
-      title: "Problem-Solution Fit Exploration",
-      content: "Through iterative prototyping and testing, we identified which challenges could be effectively addressed through our solution approach. We prioritized features based on user impact and technical feasibility.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80",
-      description: "Ideation and solution mapping process"
-    },
-    {
-      title: "Narrowed-Down Challenge",
-      content: "We focused on three key areas that represented the highest value opportunities for our target users, creating a focused solution approach to maximize impact.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80",
-      description: "Prioritized challenge areas for maximum impact"
-    },
-    {
-      title: "Design Analysis",
-      content: "The interface was designed to balance simplicity with power, allowing users to interact naturally while providing deep capabilities when needed.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80",
-      description: "Interface design and user experience development"
-    },
-    {
-      title: "The Results",
-      content: "Our solution demonstrated remarkable success in addressing the key user pain points. Users reported significant improvements in their workflows and experiences.",
-      image: "https://images.unsplash.com/photo-1572177812156-58036aae439c?q=80",
-      description: "Key metrics and performance indicators"
-    },
-    {
-      title: "Lessons Learned",
-      content: "Building this product revealed important insights about our approach and implementation strategy that we've carried forward to other projects.",
-      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80",
-      description: "Team retrospective and key takeaways"
-    }
-  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -102,19 +70,27 @@ const CaseStudyTemplate: React.FC<CaseStudyTemplateProps> = ({
                   
                   {subsections.map((section, index) => (
                     <div key={index} className="mb-10">
-                      <h3 className="text-xl font-semibold mt-8 mb-3">{section.title}</h3>
-                      <p className="text-foreground/70 mb-4">{section.content}</p>
-                      <div className="relative overflow-hidden rounded-lg cursor-pointer group" onClick={() => setOpenImage(section.image)}>
-                        <img 
-                          src={section.image} 
-                          alt={section.title} 
-                          className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span className="text-white font-medium">Click to expand</span>
+                      {section.title != "" && (
+                        <h3 className="text-xl font-semibold mt-8 mb-3">{section.title}</h3>
+                      )}
+                      {section.content.map((part, index) => (
+                        <p className="text-foreground/70 mb-4">{part}</p>
+                      ))}
+                      {section.image !== "" && (
+                      <div>
+                        <div className="relative overflow-hidden rounded-lg cursor-pointer group" onClick={() => setOpenImage(section.image)}>
+                          <img 
+                            src={section.image} 
+                            alt={section.title} 
+                            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span className="text-white font-medium">Click to expand</span>
+                          </div>
                         </div>
+                        <p className="text-sm text-foreground/60 mt-2 italic">{section.description}</p>
                       </div>
-                      <p className="text-sm text-foreground/60 mt-2 italic">{section.description}</p>
+                      )}
                     </div>
                   ))}
                   

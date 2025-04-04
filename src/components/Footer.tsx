@@ -43,12 +43,12 @@ const Footer: React.FC = () => {
           
           <div>
             <h3 className="font-medium mb-4">Get in Touch</h3>
-            <a href="mailto:pawel@skorupinski.com" className="text-foreground/70 hover:text-primary transition-colors duration-200 block mb-2">
+{/*             <a href="mailto:pawel@skorupinski.com" className="text-foreground/70 hover:text-primary transition-colors duration-200 block mb-2">
               pawel@skorupinski.com
             </a>
             <a href="tel:+34655156711" className="text-foreground/70 hover:text-primary transition-colors duration-200 block mb-4">
               +34 655 156 711
-            </a>
+            </a> */}
             <Link to="/contact" className="text-primary font-medium inline-flex items-center group">
               <span>Contact Me</span>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

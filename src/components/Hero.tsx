@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
             className="text-lg md:text-xl text-foreground/70 mb-8 leading-relaxed"
             ref={descriptionRef}
           >
-            Diligent computer scientist who prioritizes impactful market innovations. That led me to spend most of my 12-year career in health. Experience in leadership, engineering, and analyst roles shaped my holistic approach to challenges with technology products. Deeply interested in the role that digital stacks and AI agents play to unlock previously unthinkable solutions to organizations and society.
+            Diligent computer scientist who prioritizes impactful market innovations. That led me to spend half of my 12-year career in health. Experience in leadership, engineering, and analyst roles shaped my holistic approach to challenges with technology products. Deeply interested in the role that digital stacks and AI agents play to unlock previously unthinkable solutions to organizations and society.
           </p>
           
           <div ref={buttonRef}>

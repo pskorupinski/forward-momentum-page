@@ -29,11 +29,10 @@ const navItems: NavItem[] = [
     title: 'Case Studies',
     href: '/case-studies',
     submenu: [
-      { title: 'Household Helper AI Agent, pt. 1', href: '/case-studies/household-helper-ai-agent' },
-      { title: 'Strategic Business Analysis', href: '/case-studies/strategic-business-analysis' },
-      { title: 'Engineering Production Systems I', href: '/case-studies/engineering-production-systems-1' },
-      { title: 'Engineering Production Systems II', href: '/case-studies/engineering-production-systems-2' },
-      { title: 'Healthcare Patient Experience', href: '/case-studies/new-product-prototype' }
+      { title: 'Streamlining Product Portfolio', href: '/case-studies/streamlining-product-portfolio' },
+      { title: 'Re-Designing Large Cloud Service Specs', href: '/case-studies/re-designing-large-cloud-service-specs' },
+      { title: 'Shaping Global Release to 1K+ Customers', href: '/case-studies/engineering-production-systems-2' },
+      { title: 'Building Household Helper AI Agent, pt. 1', href: '/case-studies/household-helper-ai-agent' }
     ]
   }
 ];

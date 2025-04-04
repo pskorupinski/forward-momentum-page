@@ -15,27 +15,27 @@ type ContentItem = {
 
 const contentItems: ContentItem[] = [
   {
-    title: "Building a Household Helper AI Agent, pt. 1",
-    description: "A case study on how we improved conversion rates by 37% through human-centered design and iterative testing.",
+    title: "Building Household Helper AI Agent, pt. 1",
+    description: "Diving into the problem space of household management inconveniences to explore agentic AI use cases, interaction design, and development tech stack.",
     date: "March 2025",
     category: "Case Study",
     imageUrl: "https://1drv.ms/i/s!Am8JJcpLf8blgehtGujP_IXDyksaJA?embed=1&width=1536&height=1024",
-    href: "/case-studies"
+    href: "/case-studies/household-helper-ai-agent"
   },
   {
     title: "Insights from Mobile World Congress 2025",
-    description: "Exploring how product managers can adapt their approach when working with artificial intelligence and machine learning technologies.",
+    description: "Key takeaways from the world's largest mobile industry gathering, highlighting emerging trends in connectivity, AI, and device innovation.",
     date: "March 2025",
     category: "Report",
-    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=3543&ixlib=rb-4.0.3",
+    imageUrl: "https://1drv.ms/i/c/e5c67f4bca25096f/IQRx25ufhiKPRIOX4Z8L_OFSATzs2sgMmgd6IW0-QTLR-Ic?width=1024",
     href: "/reports/mwc-2025"
   },
   {
     title: "Product Discovery Frameworks Map",
-    description: "Learn how we created a design system that improved development velocity by 40% while maintaining brand consistency.",
+    description: "A comprehensive guide to various frameworks that help teams effectively discover and validate new product ideas.",
     date: "February 2025",
     category: "Tools",
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=4076&ixlib=rb-4.0.3",
+    imageUrl: "https://1drv.ms/i/c/e5c67f4bca25096f/IQRzM5RnKnDwSLTlJkYRIxPXATANW6pYAOW_jU5O1MKT-Js?width=660",
     href: "/tools/product-discovery-tools-map"
   }
 ];

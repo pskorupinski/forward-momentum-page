@@ -2,22 +2,22 @@
 import React from 'react';
 import CaseStudyTemplate from './CaseStudyTemplate';
 
-const CaseStudy5: React.FC = () => {
+const CaseStudy2: React.FC = () => {
   return (
     <CaseStudyTemplate
-      title="Healthcare Patient Experience Prototype"
-      subtitle="An innovative product prototype that redefined user experiences in healthcare, resulting in 40% improved patient satisfaction."
-      heroImage="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80"
+      title="Streamlining Product Portfolio"
+      subtitle="How we unlocked business strategy by reducing product portfolio efforts with maintained $2M/Y revenues."
+      heroImage="https://1drv.ms/i/c/e5c67f4bca25096f/IQR5DAkDiZkmRo3J7rIpkzTSAdviz-LcerwZu2tSHGOBuaU?width=1024"
       projectStats={{
-        timeline: "7 months",
-        teamSize: "10 people",
-        role: "Product Manager",
-        techStack: "React Native, Node.js, Firebase"
+        timeline: "2 months",
+        teamSize: "15 people",
+        role: "Lead Business Analyst",
+        techStack: "SQL, Excel, PowerPoint"
       }}
       outcomes={{
-        satisfaction: "4.9/5.0",
-        impact: "40% increase in patient satisfaction",
-        adoption: "88% user retention"
+        satisfaction: "High C-level approval",
+        impact: "Reduced efforts by 30% and increased predictability while maintaining revenue streams",
+        adoption: "Fully rolled out throughout the organization"
       }}
       subsections={[
         {
@@ -60,4 +60,4 @@ const CaseStudy5: React.FC = () => {
   );
 };
 
-export default CaseStudy5;
+export default CaseStudy2;

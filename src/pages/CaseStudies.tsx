@@ -52,7 +52,7 @@ const CaseStudies: React.FC = () => {
       <Navbar />
       <main className="flex-grow pt-28 pb-20">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-8">Household Helper AI Agent, pt. 1</h1>
+          <h1 className="text-4xl font-bold mb-8">Building Household Helper AI Agent, pt. 1</h1>
           <p className="text-xl text-foreground/70 mb-12 max-w-3xl">
             Diving into the problem space of household management inconveniences to explore agentic AI use cases, interaction design, and development tech stack.
           </p>
