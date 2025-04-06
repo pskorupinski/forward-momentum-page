@@ -8,6 +8,7 @@ const CaseStudy2: React.FC = () => {
       title="Streamlining Product Portfolio"
       subtitle="How we unlocked business strategy by reducing product portfolio efforts with maintained $2M/Y revenues."
       heroImage="https://1drv.ms/i/c/e5c67f4bca25096f/IQR5DAkDiZkmRo3J7rIpkzTSAdviz-LcerwZu2tSHGOBuaU?width=1024"
+      heroVideo=""
       projectStats={{
         timeline: "2 months",
         teamSize: "15 people",

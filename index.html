@@ -18,6 +18,26 @@
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" /> -->
     
     <link rel="icon" href="https://1drv.ms/i/c/e5c67f4bca25096f/IQRuCaZGMZsnTIouaf5dpvesARhkXXIkry3D9i6xHseOJ4o?width=256" type="image/png">
+    
+    <!-- Script for redirect handling -->
+    <script type="text/javascript">
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct URL and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new URL.
+      // When the single page app is loaded further down in this file,
+      // the router will take care of the rest.
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </head>
 
   <body>

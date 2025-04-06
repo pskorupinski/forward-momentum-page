@@ -8,6 +8,7 @@ const CaseStudy3: React.FC = () => {
       title="Re-Designing Large Cloud Service Specs"
       subtitle="How we got the critical cloud service design ready for new business use cases for 1M+ connected devices in 2 months."
       heroImage="https://1drv.ms/i/c/e5c67f4bca25096f/IQQmFu9PJLJuRY6N9SsSzoQUAaXJwLbNRPVXj_UGXC10XSA?width=1024"
+      heroVideo=""
       projectStats={{
         timeline: "2 months",
         teamSize: "13 people",
