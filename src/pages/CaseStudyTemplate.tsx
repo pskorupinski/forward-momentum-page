@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -107,9 +108,9 @@ const CaseStudyTemplate: React.FC<CaseStudyTemplateProps> = ({
                   ))}
                   
                   <div className="flex justify-center mt-8">
-                    <a href="/contact" className="btn-primary inline-block">
+                    <Link to="/contact" className="btn-primary inline-block">
                       Interested to know more about this solution? Get in touch!
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 

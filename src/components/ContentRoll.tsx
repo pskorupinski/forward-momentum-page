@@ -89,13 +89,13 @@ const ContentRoll: React.FC = () => {
                   {item.description}
                 </p>
                 
-                <a 
-                  href={item.href} 
+                <Link 
+                  to={item.href} 
                   className="inline-flex items-center text-primary font-medium text-sm group"
                 >
                   <span>Read more</span>
                   <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                </a>
+                </Link>
               </div>
             </article>
           ))}

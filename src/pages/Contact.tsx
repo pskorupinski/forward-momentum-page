@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
             <h1 className="text-4xl font-bold mb-8">Contact Me</h1>
             <p className="text-xl text-foreground/70 mb-8 max-w-3xl">
               <u><a href="mailto:&#112;&#97;&#119;&#101;&#108;&#64;&#115;&#107;&#111;&#114;&#117;&#112;&#105;&#110;&#115;&#107;&#105;&#46;&#99;&#111;&#109;">Email me</a></u>
-              &nbsp;or message me on <u><a href="https://linkedin.com/in/skorupinski">LinkedIn</a></u>.
+              &nbsp;or message me on <u><a href="https://linkedin.com/in/skorupinski" target="_blank" rel="noopener noreferrer">LinkedIn</a></u>.
             </p>
             {/* <div className="glass-card p-8 rounded-xl">
               <form

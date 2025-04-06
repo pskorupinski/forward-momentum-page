@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
@@ -86,9 +87,9 @@ const Reports: React.FC = () => {
             </div>
           </div>
           <div className="flex justify-center mt-8">
-            <a href="/contact" className="btn-primary inline-block">
+            <Link to="/contact" className="btn-primary inline-block">
               Want to discuss how these trends affect your product strategy? Let's talk
-            </a>
+            </Link>
           </div>
         </div>
       </main>
