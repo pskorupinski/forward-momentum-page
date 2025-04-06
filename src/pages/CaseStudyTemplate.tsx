@@ -9,6 +9,7 @@ type CaseStudyTemplateProps = {
   title: string;
   subtitle: string;
   heroImage: string;
+  heroVideo: string;
   projectStats: {
     timeline: string;
     teamSize: string;
@@ -21,10 +22,10 @@ type CaseStudyTemplateProps = {
     adoption: string;
   };
   subsections: {
-    title: string;
+    title?: string;
     content: string[];
-    image: string;
-    description: string;
+    image?: string;
+    description?: string;
   }[];
 };
 
@@ -32,6 +33,7 @@ const CaseStudyTemplate: React.FC<CaseStudyTemplateProps> = ({
   title,
   subtitle,
   heroImage,
+  heroVideo,
   projectStats,
   outcomes,
   subsections
@@ -42,13 +44,27 @@ const CaseStudyTemplate: React.FC<CaseStudyTemplateProps> = ({
     window.scrollTo(0, 0);
   }, []);
 
+  const heroVisual = heroVideo
+    ? <iframe 
+      src={heroVideo}
+      title={title}
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowFullScreen
+      className="w-full h-full"
+    ></iframe>
+    : <img 
+      src={heroImage}
+      alt={title}
+      className="w-full h-full object-cover"
+    />
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-28 pb-20">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-8">{title}</h1>
-          <p className="text-xl text-foreground/70 mb-12 max-w-3xl">
+          <p className="text-xl text-foreground/70 mb-4 max-w-3xl">
             {subtitle}
           </p>
           
@@ -56,28 +72,24 @@ const CaseStudyTemplate: React.FC<CaseStudyTemplateProps> = ({
             <div className="flex flex-col gap-8">
               <div className="rounded-lg overflow-hidden">
                 <AspectRatio ratio={16/9} className="bg-muted">
-                  <img 
-                    src={heroImage}
-                    alt={title}
-                    className="w-full h-full object-cover"
-                  />
+                  {heroVisual}
                 </AspectRatio>
               </div>
               
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="md:col-span-2">
-                  <h2 className="text-2xl font-semibold mb-4">Project Overview</h2>
+                  {/* <h2 className="text-2xl font-semibold mb-4">Project Overview</h2> */}
                   
                   {subsections.map((section, index) => (
-                    <div key={index} className="mb-10">
-                      {section.title != "" && (
+                    <div key={index} className={index==0 ? "mt-0" : (!section.title) ? "mt-5" : "mt-12"}>
+                      {section.title && (
                         <h3 className="text-xl font-semibold mt-8 mb-3">{section.title}</h3>
                       )}
                       {section.content.map((part, index) => (
-                        <p className="text-foreground/70 mb-4">{part}</p>
+                        <p className="text-foreground/70 mb-4" dangerouslySetInnerHTML={{ __html: part }}></p>
                       ))}
                       {section.image !== "" && (
-                      <div>
+                      <div className="mt-6">
                         <div className="relative overflow-hidden rounded-lg cursor-pointer group" onClick={() => setOpenImage(section.image)}>
                           <img 
                             src={section.image} 
@@ -96,7 +108,7 @@ const CaseStudyTemplate: React.FC<CaseStudyTemplateProps> = ({
                   
                   <div className="flex justify-center mt-8">
                     <a href="/contact" className="btn-primary inline-block">
-                      Interested in similar solutions? Get in touch
+                      Interested to know more about this solution? Get in touch!
                     </a>
                   </div>
                 </div>
@@ -106,7 +118,7 @@ const CaseStudyTemplate: React.FC<CaseStudyTemplateProps> = ({
                     <h3 className="font-semibold mb-3">Project Stats</h3>
                     <div className="space-y-4">
                       <div>
-                        <p className="text-sm text-foreground/60">Development Timeline</p>
+                        <p className="text-sm text-foreground/60">Duration</p>
                         <p className="font-medium">{projectStats.timeline}</p>
                       </div>
                       <div>

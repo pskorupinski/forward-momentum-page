@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
-import CaseStudies from "./pages/CaseStudies";
+import CaseStudies from "./pages/CaseStudy-HouseholdHelper";
 import CaseStudiesBrowse from "./pages/CaseStudiesBrowse";
 import CaseStudy2 from "./pages/CaseStudy-StreamliningPortfolio";
 import CaseStudy3 from "./pages/CaseStudy-RedesigningCloudService";
