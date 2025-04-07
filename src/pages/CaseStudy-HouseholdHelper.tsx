@@ -63,8 +63,8 @@ const CaseStudies: React.FC = () => {
           content: [
             "The outcomes of brainstorming the agentic solutions for the household needs gave me a good foundation to zoom-in on lower-level pain points. Of course, there is a wealth of interesting challenges both in the laundry monitoring and guidance cycle. They are quite interrelated and it did not seem trivial to extract one piece.",
             "However, an insight I found was that all of these challenges - and arguably any challenge that involves an AI agent interacting with a group of people - has one common requirement. It is: at all times, the AI agent must decide which person is the most appropriate one to contact. I coined a 'how might we' question:",
-            "<b>How might we design an AI agent that fairly and considerably engages a group of humans in any given activity?</b>",
-            "On Figure 5, I emphasized that focus in the original customer and value map. I put the nuances of the weekly laundry management aside for a while, and focused on the world of AI Agents'-Humans' interaction patterns, <b>starting from a small talk</b>."
+            "<b>How might we fairly and effectively engage a group of household members in any given activity leveraging LLM-based AI agent frameworks?</b>",
+            "On Figure 5, I emphasized that focus in the original customer and value map. I put the nuances of the weekly laundry management aside for a while, and focused on the world of AI Agents'-Humans' interaction patterns, <b>starting from the simplest of activities: a small talk</b>."
           ],
           image: "https://1drv.ms/i/c/e5c67f4bca25096f/IQQ48MHmpBpXS6MfdGVfWnpUAZ3SZj7C9_aJjn--p6w6-0A?width=1024",
           description: "Figure 5: Part of the Value Map I Chose to Focus On (click to see full)"

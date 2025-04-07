@@ -9,8 +9,8 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 type CaseStudyTemplateProps = {
   title: string;
   subtitle: string;
-  heroImage: string;
-  heroVideo: string;
+  heroImage?: string;
+  heroVideo?: string;
   projectStats: {
     timeline: string;
     teamSize: string;
